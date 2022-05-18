@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900|300" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: 'Lato', sans-serif;
+            line-height: 1.5em;
+            color: #2e4057;
+        }
+
+        main {
+            padding: 20px;
+            margin: auto;
+            max-width: 650px;
+        }
+
+        section {
+            /* background-color: #FCDD0D; */
+            margin: 100px 0;
+            padding: 50px;
+            border-bottom-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom: 2px solid #08415C;
+        }
+
+        h2 {
+            color: #08415c;
+            /* background-color: #faa88725; */
+            border-bottom: 1px solid #08415c;
+            padding-bottom: 5px;
+        }
+
+        .providers {
+            /* border-right: 3px solid #08415c;  */
+            background-color: #FFD400;
+            padding: 20px 8px 0px 8px;
+            border-radius: 6px 40px;
+            margin-right: 12px;
+            height: 160px;
+            /* border: 2px solid #08415C;
+            box-shadow: inset 0px 0px 5px; */
+        }
+
+        .magazine {
+            background-color: #FFD400;
+            padding: 8px 0px 0px 8px;
+            border-radius: 6px 40px;
+            height: 240px;
+        }
+
+        h1 {
+            margin-top: 60px;
+            word-spacing: 0.1em;
+            line-height: 1.2em;
+            /* background-color: #eee5e9;
+            padding: 10px 8px;
+            border-radius: 12px; */
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #7101a1;
+            height: 80px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            line-height: 90px;
+        }
+
+        nav ul li {
+            flex-grow: 1;
+            text-align: center;
+        }
+        nav ul li a {
+            display: block;
+            padding: 10px;
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: white;
+        }
+
+        .button, button {
+            background-color: #008EF5;
+            border: none;
+            border-radius: 6px;
+            color: white;    
+        }
+        #email {
+            border: 1px solid #7101a1;
+            border-radius: 6px;
+            background-color: white;
+        }
+
+        .flex {
+            display: flex;
+        }
+        .flex div {
+            flex-basis: 100%;
+        }
+
+        #subscription-plans div {
+            padding: 10px 10px 60px;
+            position: relative;
+        }
+        #subscription-plans ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        #subscription-plans div button {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            right: 10px;
+        }
+
+        form label, form input {
+            display: block;
+            width: 100%;
+            margin: 0 0 10px;
+            padding: 10px;
+        }
+         form input[type="submit"] {
+            width: 100%;
+         }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Computing</a></li>
+            <li><a href="#">Entertainment</a></li>
+            <li><a href="#">Communication</a></li>
+            <li><a href="#">Science</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Provider News from around the World</h1>
+        <section class="providers-cont">
+            <h2>Providers</h2>
+            <div class="flex">
+                <div class="providers">
+                    <strong>Telekom</strong>
+                    <p>
+                        Discover Telekom and their services.<br>
+                        <a href="#">read more</a>
+                    </p>
+                </div>
+                <div class="providers">
+                    <strong>Verizon</strong>
+                    <p>
+                        More about Verizon in this article.<br>
+                        <a href="#">read more</a>
+                    </p>
+                </div>
+                <div class="providers">
+                    <strong>AT&T</strong>
+                    <p>
+                        Every detail about AT&T.<br>
+                        <a href="#">read more</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="subscribe">
+            <h2>Subscribe to our newsletter</h2>
+            <form>
+                <input id="email" type="email" placeholder="Email Address" aria-label="Email Address">
+
+                <input type="submit" value="subscribe" class="button">
+            </form>
+        </section>
+        
+        <section>
+            <h2>Our print magazine subscription plans</h2>
+            <div id="subscription-plans" class="flex">
+                <div>
+                    <div class="magazine">
+                    <h3>Junior</h3>
+                    <ul>
+                        <li>4 printed issues</li>
+                        <li>100 online articles</li>
+                    </ul>
+                    </div>
+                    <button>Subscribe now</button>
+                </div>
+                <div>
+                    <div class="magazine">
+                    <h3>Pro</h3>
+                    <ul>
+                        <li>12 printed issues</li>
+                        <li>250 online articles</li>
+                        <li>forum access</li>
+                    </ul>
+                    </div>
+                    <button>Subscribe now</button>
+                </div>
+                <div>
+                    <div class="magazine">
+                    <h3>Geek</h3>
+                    <ul>
+                        <li>24 printed issues</li>
+                        <li>+1000 online articles</li>
+                        <li>forum access</li>
+                        <li>your name in the credits</li>
+                    </ul>
+                    </div>
+                    <button>Subscribe now</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
